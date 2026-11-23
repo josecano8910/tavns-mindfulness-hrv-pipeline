@@ -1,0 +1,5 @@
+condition_id,stimulation,mindfulness,audio_cue,trigger_start,trigger_end
+C1_Active_Mindful,active_tavns,mindfulness_app,guided_breath.wav,101,102
+C2_Active_NoMind,active_tavns,control_rest,ambient_neutral.wav,201,202
+C3_Sham_Mindful,sham_tavns,mindfulness_app,guided_breath.wav,301,302
+C4_Sham_NoMind,sham_tavns,control_rest,ambient_neutral.wav,401,402
