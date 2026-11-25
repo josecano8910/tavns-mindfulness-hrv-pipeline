@@ -15,6 +15,10 @@ In this project, I built an automated data-cleaning and analysis pipeline to tes
 * **Bridging biology and behavior:** Translating raw heartbeat intervals into meaningful psychological metrics (like vagal tone) gave me hands-on experience connecting nervous system activity directly to cognitive performance.
   
 ## Repository Contents
+
+* `analysis/artifact_filter_validation.ipynb` — Standalone validation notebook testing the 5-beat rolling-median threshold filter and linear interpolation on synthetic RR artifacts.
+* `artifact_cleaning_example.png` — Diagnostic plot showing raw sensor spikes vs. interpolated RR intervals.
+
 * `experiment/` — Experimental paradigm design and task parameters.
 * `analysis/hrv_2x2_anova.ipynb` — Jupyter/Colab notebook for Kubios-style RR-interval artifact filtering, HRV feature extraction (`RMSSD`, `SDNN`, `pNN50`, `LF/HF`), automated quality control (`<= 5%` artifact cutoff), and Type II 2 × 2 ANOVA.
 * `synthetic_2x2_hrv.csv` — Simulated cohort dataset (*n* = 10 per cell).
