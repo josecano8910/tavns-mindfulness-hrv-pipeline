@@ -2,6 +2,18 @@
 
 A reproducible Python pipeline simulating and analyzing physiological (heart rate variability) and behavioral (reaction time) outcomes across a **2 × 2 factorial design** (`Stimulation`: Active vs. Sham taVNS × `App Condition`: Mindfulness vs. No Mindfulness, *N* = 40).
 
+#### Plain-English Overview: What This Project Does & What I Learned
+
+#### What I’m Doing
+
+In this project, I built an automated data-cleaning and analysis pipeline to test how two different interventions—**ear-based nerve stimulation (taVNS)** and **mindfulness meditation**—affect stress recovery and focus, both separately and together. Because raw heart rate data is notoriously messy, the code acts like a digital filter that spots and cleans up sensor glitches before running statistical tests to see if these interventions actually calm the nervous system (measured by heart rate variability) and sharpen attention (measured by reaction times). 
+
+#### What I Learned
+
+* **Clean data matters more than fancy math:** Physiological signals are full of tiny hiccups (like a participant moving or a sensor slipping). Building an automated quality-control rule (dropping sessions with more than 5% bad data) showed me how small recording errors can completely skew results if you don't catch them early.
+* **Testing pipelines with fake data saves headaches:** Generating a realistic, simulated dataset first allowed me to verify that my cleaning filters and statistical models worked properly before ever touching real human data.
+* **Bridging biology and behavior:** Translating raw heartbeat intervals into meaningful psychological metrics (like vagal tone) gave me hands-on experience connecting nervous system activity directly to cognitive performance.
+  
 ## Repository Contents
 * `experiment/` — Experimental paradigm design and task parameters.
 * `analysis/hrv_2x2_anova.ipynb` — Jupyter/Colab notebook for Kubios-style RR-interval artifact filtering, HRV feature extraction (`RMSSD`, `SDNN`, `pNN50`, `LF/HF`), automated quality control (`<= 5%` artifact cutoff), and Type II 2 × 2 ANOVA.
