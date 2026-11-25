@@ -25,9 +25,12 @@ In this project, I built an automated data-cleaning and analysis pipeline to tes
 * `tavns_mindfulness_2x2_results.png` — Two-panel interaction plot showing vagal tone reactivity (Δ RMSSD) and attention speed changes (Δ RT).
 
 ## Results Preview
+
 ![2x2 Factorial HRV and Reaction Time Results](tavns_mindfulness_2x2_results.png)
+*Figure 1: Group-level interaction effects across Active vs. Sham taVNS and Mindfulness conditions (N = 40).*
 
 ![Single-Subject RR-Interval Artifact Filtering Test](artifact_cleaning_example.png)
+*Figure 2: Single-subject validation of the 5-beat rolling-median threshold filter (>250 ms cutoff) and linear interpolation.*
 
 ## Limitations & Future Directions
 
