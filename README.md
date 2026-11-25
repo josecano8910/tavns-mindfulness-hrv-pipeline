@@ -27,6 +27,8 @@ In this project, I built an automated data-cleaning and analysis pipeline to tes
 ## Results Preview
 ![2x2 Factorial HRV and Reaction Time Results](tavns_mindfulness_2x2_results.png)
 
+![Single-Subject RR-Interval Artifact Filtering Test](artifact_cleaning_example.png)
+
 ## Limitations & Future Directions
 
 * **Synthetic Data Assumptions:** The current dataset (`N = 40`, `n = 10` per cell) is synthetically generated under controlled parametric assumptions (e.g., normal error distributions and predefined effect sizes) to validate the preprocessing and statistical pipeline. Real-world psychophysiological recordings typically exhibit greater inter-individual baseline variability and non-normal artifact bursts.
