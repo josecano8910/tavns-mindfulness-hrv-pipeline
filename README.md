@@ -1,5 +1,8 @@
 # taVNS & Mindfulness: 2 × 2 Factorial HRV & Attention Pipeline
 
+[![Open In Colab](https://google.com)](https://google.com)
+
+
 A reproducible Python pipeline simulating and analyzing physiological (heart rate variability) and behavioral (reaction time) outcomes across a **2 × 2 factorial design** (`Stimulation`: Active vs. Sham taVNS × `App Condition`: Mindfulness vs. No Mindfulness, *N* = 40).
 
 ## Repository Contents
